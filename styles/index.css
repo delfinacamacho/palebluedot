@@ -1,0 +1,563 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: calc(100% - 32px);
+}
+
+header nav {
+  height: 44px;
+}
+
+header nav .logo img {
+  width: 24px;
+}
+
+header nav .hamburger-btn-action {
+  display: none;
+}
+
+header nav .hamburger-btn-action:checked ~ .menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header nav .hamburger-btn-action:checked ~ label .hamburger-btn .bars {
+  display: none;
+}
+
+header nav .hamburger-btn-action:checked ~ label .hamburger-btn .close {
+  display: block;
+}
+
+header nav .hamburger-btn .bars {
+  display: block;
+}
+
+header nav .hamburger-btn .close {
+  display: none;
+}
+
+header nav .menu {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #0000EC;
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  left: 0;
+}
+
+header nav .menu li a {
+  color: white;
+}
+
+header nav .menu li:last-child {
+  padding-bottom: 24px;
+}
+
+.home {
+  padding: 73px 0 24px 0;
+}
+
+.home h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.home p {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 24px 0 36px 0;
+}
+
+.home .desktop {
+  display: none;
+}
+
+.button {
+  padding: 13px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.episodes {
+  -webkit-clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+          clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
+}
+
+.episodes h2 {
+  font-size: 36px;
+  line-height: 42px;
+  padding-top: 64px;
+  padding-bottom: 21px;
+}
+
+.episodes .podcasts {
+  padding-bottom: 143.5px;
+  text-align: center;
+}
+
+.episodes .podcasts iframe {
+  width: 90%;
+  height: 232px;
+  margin: 5.5px auto;
+  border: none;
+}
+
+.episodes .podcasts iframe:first-child {
+  margin-top: 0;
+}
+
+.episodes .podcasts iframe:last-child {
+  margin-bottom: 0;
+}
+
+.about-us img {
+  width: 100%;
+  margin-top: -97.5px;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 27px 0 8px 0;
+}
+
+.about-us p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.interviews h2 {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 54px 0 14px 0;
+}
+
+.interviews img {
+  margin: 0 auto;
+  display: block;
+}
+
+.topics h2 {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 48px;
+}
+
+.topics li {
+  margin: 36px auto;
+  display: block;
+  text-align: center;
+}
+
+.topics li h3 {
+  margin-top: 13px;
+}
+
+.new-in {
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.new-in .container {
+  padding: 64px 0 67px 0;
+}
+
+.new-in .container h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 36px;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer .container p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 24px;
+}
+
+footer .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 29px 29px 45px 29px;
+}
+
+body {
+  background-color: white;
+}
+
+body h1, body h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+body p {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .menu li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.home {
+  background-color: white;
+  color: #060A24;
+}
+
+.home .crossed-text {
+  text-decoration: line-through;
+}
+
+.episodes {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.episodes h2 {
+  color: white;
+}
+
+.about-us img {
+  position: relative;
+  z-index: 9;
+}
+
+.interviews img {
+  max-width: 100%;
+}
+
+.topics h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.new-in {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.new-in h2 {
+  color: white;
+}
+
+.button {
+  background-color: #00F3BB;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  color: #060A24;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer {
+  color: #060A24;
+}
+
+footer .social a {
+  color: #060A24;
+}
+
+@media (min-width: 780px) {
+  .container {
+    max-width: 1240px;
+  }
+  header nav {
+    height: 80px;
+  }
+  header nav .logo img {
+    width: 36px;
+  }
+  header nav .hamburger-btn {
+    display: none;
+  }
+  header nav .menu {
+    background-color: transparent;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: auto;
+    top: auto;
+    left: auto;
+  }
+  header nav .menu li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  header nav .menu li a {
+    color: #060A24;
+  }
+  header nav .menu li:last-child {
+    padding-bottom: 12px;
+  }
+  header nav .menu li:hover a {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  header nav .menu li:active a {
+    color: #060A24;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  .home {
+    max-width: 1040px;
+    padding: 200px 0 5px 0;
+  }
+  .home h1 {
+    font-size: 64px;
+    line-height: 84px;
+  }
+  .home br {
+    display: none;
+  }
+  .home .blue-text {
+    color: #0000EC;
+  }
+  .home .mobile {
+    display: none;
+  }
+  .home .desktop {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 56px 0;
+    max-width: 628px;
+  }
+  .home .button {
+    max-width: 226px;
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .episodes {
+    -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  }
+  .episodes .container {
+    max-width: 1040px;
+  }
+  .episodes .container h2 {
+    font-size: 48px;
+    line-height: 62px;
+    padding: 186px 0 26px 0;
+  }
+  .episodes .podcasts {
+    padding: 0 100px 232.6px 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 72px;
+  }
+  .episodes .podcasts iframe {
+    width: 100%;
+    height: 232px;
+    margin: 0 0;
+  }
+  .about-us .container {
+    max-width: 984px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-us .container img {
+    max-width: 457.6px;
+    margin-top: -168.6px;
+  }
+  .about-us .container .text-content {
+    margin-left: 62.4px;
+  }
+  .about-us .container .text-content h2 {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 20.4px 0 24px 0;
+  }
+  .about-us .container .text-content p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 464px;
+  }
+  .interviews .container {
+    max-width: 1040px;
+  }
+  .interviews .container h2 {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 64px 0 36px 0;
+  }
+  .interviews .img-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .topics .container {
+    max-width: 1040px;
+  }
+  .topics h2 {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 64px 0 56px 0;
+  }
+  .topics .topic-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 13px 0 34px 0;
+  }
+  .topics .topic-container li {
+    margin: 0 auto;
+    max-width: 220px;
+  }
+  .new-in {
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .new-in .container {
+    padding: 213px 0 151px 0;
+  }
+  .new-in .container h2 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .new-in .container .button {
+    margin: 0 auto;
+    max-width: 345px;
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container p {
+    margin: 36px 0 31px 0;
+  }
+  footer .container .social {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .social a {
+    margin-left: 36px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

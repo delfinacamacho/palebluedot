@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+
+    <!-- Librería Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Librería Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Blue Dot Podcasts</title>
+    <link rel="icon" href="assets/logo.svg" type="image/icon">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="#home"><img src="assets/logo.svg" alt="Logo de Blue Dot"></a>
+            </div>
+
+            <input type="checkbox" id="hamburger-btn-action" class="hamburger-btn-action" aria-label="hamburger button">
+
+            <label for="hamburger-btn-action">
+                <span class="hamburger-btn">
+                    <i class="fa fa-bars bars"></i>
+                    <i class="fa fa-times close"></i>
+                </span>
+            </label>
+            
+        <ul class="menu">
+            <li><a href="#episodes">Episodios</a></li>
+            <li><a href="#about-us">Nosotros</a></li>
+            <li><a href="#interviews">Entrevistas</a></li>
+            <li><a href="#topics">Topicos</a></li>
+          </ul>
+
+        </nav>
+        
+
+      </header>
+
+    <main>
+
+        <section id="home" class="home container">
+
+                <h1>Hello 
+                    <span class="crossed-text">world</span>
+                    <br>
+                     pale blue dot<span class="blue-text">.</span>
+                    </h1>
+                <p class="desktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <p class="mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <a href="http://syntax.fm"><div class=button>Conocé más</div></a>
+
+        </section>
+
+        <section id="episodes" class="episodes">
+            <div class="container">
+                <h2>Episodios</h2>
+            </div>
+        
+            <div class=podcasts>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media" title="Podcast"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media" title="Podcast"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media" title="Podcast"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media" title="Podcast"></iframe>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-us">
+            <div class="container">
+                <img src="assets/phone.png" alt="Imagen de un teléfono celular con un artículo">
+           
+                <div class="text-content">
+                    <h2>De dónde venimos</h2>
+                    <p>
+                        Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                        <br>
+                        <br>
+                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="interviews" class="interviews">
+            <div class="container">
+                <h2>Invitadas/os estelares</h2>
+            </div>
+            <div class="img-container">
+                <img src="assets/1_grace-hopper.png" alt="Fotografía de Grace Hopper">
+                <img src="assets/2_katie-bouman.png" alt="Fotografía de Katie Bouman">
+                <img src="assets/3_margaret-hamilton.png" alt="Fotografía de Margaret Hamilton">
+                <img src="assets/4_era-univac.png" alt="Fotografía de una computadora E.R.A. Univac 1103 en 1950">
+                <img src="assets/5_eniac.png" alt="Fotografía de operadores con una computadora Eniac">
+                <img src="assets/6_susan-kare.png" alt="Fotografía de Susan Kare">
+            </div>
+        </section>
+
+        <section id="topics" class="topics">
+            <div class="container">
+                <h2>Algunos de nuestros temas</h2>
+                <ul class="topic-container">
+                    <li>
+                        <img src="assets/icon1.svg" alt="">
+                        <h3>Trabajo remoto</h3>
+                    </li>
+                    <li>
+                        <img src="assets/icon2.svg" alt="">
+                        <h3>Repensando la programación</h3>
+                    </li>
+                    <li>
+                        <img src="assets/icon3.svg" alt="">
+                        <h3>Bases del código</h3>
+                    </li>
+                    <li>
+                        <img src="assets/icon4.svg" alt="">
+                        <h3>Seguridad informática</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="new-in">
+            <div class="container">
+                <h2>¿Querés las últimas novedades?</h2>
+                <a href="http://syntax.fm"><div class=button>Escuchá los episodios</div></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div  class="container">
+            <p>© 2020— Hello blue pale dot</p>
+            <div class=social>
+                <a href="https://www.spotify.com/"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://telegram.org/"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+        </div> 
+    </footer>
+       
+</body>
+
+</html>

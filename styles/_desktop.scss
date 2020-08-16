@@ -1,0 +1,224 @@
+@import "_variables";
+
+.container {
+    max-width: 1240px;
+}
+
+header nav {
+    height: 80px;
+
+    .logo {
+        img {
+            width: 36px;
+        }
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .menu {
+        background-color: transparent;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        width: auto;
+        top: auto;
+        left: auto;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            a {
+                color: $secondary-color;
+            }
+        }
+        & li:last-child {
+            padding-bottom: 12px;
+        }
+        & li:hover a{
+            color: $btn-color;
+            text-decoration: line-through;
+        }
+        & li:active a {
+            color: $secondary-color;
+            opacity: 0.5;
+            text-decoration: line-through;
+        }
+    }
+
+
+
+}
+
+
+.home {
+    max-width: 1040px;
+    padding: 200px 0 5px 0;
+    
+    h1 {
+        font-size: 64px;
+        line-height: 84px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .blue-text {
+        color: $accent-color;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 56px 0;
+        max-width: 628px;
+    }
+
+    .button {
+        max-width: 226px;
+        padding: 16px 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+.episodes {
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+
+    .container {
+        max-width: 1040px;
+        
+        h2 {
+            font-size: 48px;
+            line-height: 62px;
+            padding: 186px 0 26px 0;
+            }
+    }
+
+    .podcasts {
+        padding: 0 100px 232.6px 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 72px;
+
+        iframe {
+            width: 100%;
+            height: 232px;
+            margin: 0 0;
+        }
+    }
+
+}
+
+.about-us .container {
+    max-width: 984px;
+    display: flex;
+    justify-content: space-between;
+        
+        img {
+            max-width: 457.6px;
+            margin-top: -168.6px;
+        }
+
+.text-content {
+    margin-left: 62.4px;
+    h2 {
+        font-size: 48px;
+        line-height: 62px;
+        margin: 20.4px 0 24px 0;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 464px;
+    }
+}
+
+    }
+
+.interviews {
+    .container {
+        max-width: 1040px;
+        h2 {
+            font-size: 48px;
+            line-height: 62px;
+            margin: 64px 0 36px 0;
+        }
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.topics {
+    .container {
+        max-width: 1040px;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 62px;
+        margin: 64px 0 56px 0;
+    }
+
+    .topic-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 0 34px 0;
+
+        li {
+            margin: 0 auto;
+            max-width: 220px;
+        }
+    }
+}
+
+.new-in {
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+
+    .container {
+        padding: 213px 0 151px 0;
+
+        h2 {
+            font-size: 48px;
+            line-height: 62px;
+        }
+
+        .button {
+            margin: 0 auto;
+            max-width: 345px;
+            padding: 16px 0;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+ 
+footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 36px 0 31px 0;
+        }
+        .social {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            a {
+                margin-left: 36px;
+            }
+        }
+    }
+}

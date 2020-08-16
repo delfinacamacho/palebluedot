@@ -1,0 +1,109 @@
+@import "_variables";
+
+body {
+    background-color: $primary-color;
+    h1, h2 {
+        font-family: $primary-font;
+    }
+
+    h3 {
+        font-family: $primary-font;
+        font-weight: 600;
+      }
+      
+    p {
+        font-family: $secondary-font;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+header {
+    background: $primary-color;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu li {
+                box-sizing: border-box;
+                padding: 12px 16px;
+                text-transform: uppercase;
+                font-family: $secondary-font;
+            }
+        }
+}
+
+.home {
+    background-color: $primary-color;
+    color: $secondary-color;
+    .crossed-text {
+        text-decoration: line-through;
+    }
+}
+
+.episodes {
+    background-image: $gradient;
+
+    h2 {
+        color: $primary-color;
+        }
+        
+}
+
+.about-us {
+    img {
+        position: relative;
+        z-index: 9;
+        }
+}
+
+.interviews {
+    img {
+        max-width: 100%;
+    }
+}
+
+.topics {
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.new-in {
+    background-image: $gradient;
+
+    h2 {
+        color: $primary-color;
+        }
+}
+
+.button {
+        background-color: $btn-color;
+        font-family: $secondary-font;
+        font-weight: 500;
+        color: $secondary-color;
+        text-align: center;
+        text-transform: uppercase;
+        transition: .3s;
+        
+        &:hover {
+            background-image: $btn-hover;
+            color: $primary-color;
+            transition: .3s;
+          }
+}
+
+footer {
+    color: $secondary-color;
+    .social a {
+        color: $secondary-color;
+    }
+}
